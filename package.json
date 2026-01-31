@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/array-base-group-values-on-key",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Group the elements of an array according to a specified property name.",
   "license": "Apache-2.0",
   "author": {
