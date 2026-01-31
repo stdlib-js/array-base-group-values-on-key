@@ -52,7 +52,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import groupValuesOnKey from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-group-values-on-key@esm/index.mjs';
+import groupValuesOnKey from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-group-values-on-key@v0.1.0-esm/index.mjs';
 ```
 
 #### groupValuesOnKey( x, key )
@@ -132,7 +132,7 @@ The function supports the following parameters:
 
 import discreteUniform from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-discrete-uniform@esm/index.mjs';
 import filledBy from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-filled-by@esm/index.mjs';
-import groupValuesOnKey from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-group-values-on-key@esm/index.mjs';
+import groupValuesOnKey from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-group-values-on-key@v0.1.0-esm/index.mjs';
 
 function clbk( idx ) {
     return {
