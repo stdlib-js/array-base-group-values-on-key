@@ -1,4 +1,4 @@
-/**
+/*
 * @license Apache-2.0
 *
 * Copyright (c) 2025 The Stdlib Authors.
@@ -16,16 +16,25 @@
 * limitations under the License.
 */
 
-'use strict';
+// TypeScript Version: 4.1
+
+/// <reference types="https://cdn.jsdelivr.net/gh/stdlib-js/types@main/index.d.ts"/>
+
+import { Collection, AccessorArrayLike } from '@stdlib/types/array';
 
 /**
-* Group the elements of an array according to a specified property name.
+* Object key.
+*/
+type Key = string | symbol | number;
+
+/**
+* Groups the elements of an array according to a specified property name.
 *
-* @module @stdlib/array-base-group-values-on-key
+* @param x - input array
+* @param key - property name whose values are used to determine groups
+* @returns group results
 *
 * @example
-* var groupValuesOnKey = require( '@stdlib/array-base-group-values-on-key' );
-*
 * var x = [
 *     {
 *         'x': 1,
@@ -40,12 +49,9 @@
 * var out = groupValuesOnKey( x, 'y' );
 * // returns { '2': [ { 'x': 1, 'y': 2 } ], '3': [ { 'x': 1, 'y': 3 } ] }
 */
-
-// MODULES //
-
-var main = require( './main.js' );
+declare function groupValuesOnKey<T extends Record<Key, any>, K extends keyof T>( x: Collection<T> | AccessorArrayLike<T>, key: K ): Record<string, Array<T>>;
 
 
 // EXPORTS //
 
-module.exports = main;
+export = groupValuesOnKey;
